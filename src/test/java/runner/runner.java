@@ -10,7 +10,7 @@ public class runner {
 	@RunWith(Cucumber.class)
 	@CucumberOptions(features={"src/main/resources/test6.feature"},
 	glue={"runner","Stepdef"},
-			 plugin="json:target/jsonreport")
+			 plugin="json:target/jsonreport.json")
 	//plugin="html:target/htmlreport")
 	//plugin="junit:target/xmlreport.xml")
 	public class Runnerclass {
